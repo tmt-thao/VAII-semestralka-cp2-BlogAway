@@ -1,1 +1,1 @@
-blop
+> npx create-react-app client

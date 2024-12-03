@@ -150,6 +150,7 @@ section {
 
 
 /* ==== NAVBAR ============================================================================ */
+
 nav {
     width: 100vw;
     height: 5rem;
@@ -192,7 +193,6 @@ footer {
     background: var(--color-gray-900);
     margin-top: 6rem;
     padding-top: 6rem;
-    ;
 }
 
 .footer__categories {
@@ -311,4 +311,50 @@ footer {
 
 .post-detail p {
     margin-bottom: .7rem;
+}
+
+/* ==== REGISTER & form styles ==================================== */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: .6rem 1rem;
+    border-radius: var(--radius-1);
+    resize: none;
+}
+
+.form__error-message {
+    background: var(--color-red);
+    color: var(--color-white);
+    font-size: .8rem;
+    padding: .6rem 1rem;
+    border-radius: var(--radius-1);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.register, .login, .create-post {
+    width: var(--form-width);
+    margin-inline: auto;
+    height: calc(100vh - 12rem);
+    display: grid;
+    place-items: center;
+}
+
+.register h2, .login h2, .create-post h2 {
+    margin-bottom: 2rem;
+}
+
+.register small, .login small {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.register small a, .login small a {
+    color: var(--color-primary);
 }

@@ -14,3 +14,5 @@ server
 > npm run dev
 > npm install bcryptjs
 > npm install jsonwebtoken
+> npm install express-fileupload
+> npm install uuid

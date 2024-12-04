@@ -12,3 +12,4 @@ server
 > npm install express mongoose cors dotenv
 > npm install -D nodemon
 > npm run dev
+> npm install bcryptjs

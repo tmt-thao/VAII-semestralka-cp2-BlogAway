@@ -8,4 +8,4 @@ const userSchema = new Schema({
     posts: {type: Number, default: 0}
 })
 
-module.exports = moddel('User', userSchema)
+module.exports = model('User', userSchema)

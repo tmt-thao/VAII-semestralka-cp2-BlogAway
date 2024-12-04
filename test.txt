@@ -1,3 +1,4 @@
+client
 > npx create-react-app client
 > npm start
 
@@ -5,3 +6,9 @@
 > npm install react-icons
 
 > npm install react-quill
+
+server
+> npm init -y
+> npm install express mongoose cors dotenv
+> npm install -D nodemon
+> npm run dev

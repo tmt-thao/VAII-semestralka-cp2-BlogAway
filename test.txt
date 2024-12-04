@@ -1,4 +1,7 @@
 > npx create-react-app client
+> npm start
+
 > npm i react-router-dom
 > npm install react-icons
-> npm start
+
+> npm install react-quill

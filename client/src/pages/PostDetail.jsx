@@ -19,7 +19,7 @@ const PostDetail = () => {
 
         <h1>This is the post title!</h1>
 
-        <div className="post-detail___thumbnail">
+        <div className="post-detail__thumbnail">
           <img src={Thumbnail} alt="" />
         </div>
 

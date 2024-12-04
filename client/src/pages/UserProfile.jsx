@@ -24,7 +24,7 @@ const UserProfile = () => {
     if (!token) {
       navigate('/login')
     }
-  }, [])
+  })
 
   return (
     <section className="profile">

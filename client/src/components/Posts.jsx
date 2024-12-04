@@ -38,12 +38,12 @@ const Posts = () => {
                         {
                             posts.map(
                                 ({
-                                    id,
+                                    _id: id,
                                     thumbnail,
                                     category,
                                     title,
                                     description,
-                                    authorID,
+                                    creator,
                                     createdAt
                                 }) => <PostItem
                                         key={id}
@@ -52,7 +52,7 @@ const Posts = () => {
                                         category={category}
                                         title={title}
                                         description={description}
-                                        authorID={authorID}
+                                        authorID={creator}
                                         createdAt={createdAt} />
                             )
                         }

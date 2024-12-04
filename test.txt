@@ -19,3 +19,4 @@ server
 
 client
 > npm install axios
+> npm install react-time-ago javascript-time-ago

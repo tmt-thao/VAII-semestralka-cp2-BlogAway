@@ -5,7 +5,7 @@ const { registerUser, loginUser, getUser, changeAvatar, editUser, getAuthors } =
 const router = Router()
 
 router.post('/register', registerUser)
-router.post('/logiin', loginUser)
+router.post('/login', loginUser)
 router.get('/:id', getUser)
 router.get('/', getAuthors)
 router.post('/change-avatar', changeAvatar)

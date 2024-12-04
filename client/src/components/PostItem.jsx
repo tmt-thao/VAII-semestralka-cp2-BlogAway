@@ -10,7 +10,7 @@ const PostItem = ({ postID, category, title, description, authorID, thumbnail, c
     return (
         <article className="post">
             <div className="post__thumbnail">
-                <img src={thumbnail} alt={title} />
+                <img src={`${process.env.REACT_APP_ASSETS_URL}/uploads/${thumbnail}`} alt={title} />
             </div>
 
             <div className="post__content">

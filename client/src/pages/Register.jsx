@@ -33,7 +33,7 @@ const Register = () => {
         setError("Couldn't regiser user. Please try again.")
       }
       
-      navigate('/')
+      navigate('/login')
 
     } catch (error) {
       setError(error.response.data.message)

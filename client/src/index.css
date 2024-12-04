@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400;500;600;800&family=Ubuntu&display=swap');
 
 :root {
-    --color-primary: #6f6af8;
+    --color-primary: #ffa800;
+    --color-primary-light: #ffd178;
     --color-white: #fff;
     --color-red: rgb(255, 63, 63);
     --color-gray-100: hsl(220, 20%, 10%, 5%);
@@ -11,7 +12,7 @@
     --color-gray-700: #252542;
     --color-gray-900: #0c0c22;
 
-    --color-bg: hwb(240 95% 0%);
+    --color-bg: #ffedd4;
 
     --transition: all 300ms ease;
 
@@ -132,7 +133,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--color-gray-900);
+    background: var(--color-primary);
     color: var(--color-white);
 }
 
@@ -156,7 +157,7 @@ nav {
     height: 5rem;
     display: grid;
     place-items: center;
-    background: var(255, 255, 255, .5);
+    background: var(--color-primary-light);
     position: fixed;
     top: 0;
     left: 0;
@@ -190,7 +191,7 @@ nav {
 /* ==== FOOTER ============================================================================ */
 
 footer {
-    background: var(--color-gray-900);
+    background: var(--color-primary-light);
     margin-top: 6rem;
     padding-top: 6rem;
 }
@@ -204,8 +205,9 @@ footer {
 }
 
 .footer__categories a {
-    background: var(--color-gray-700);
+    background: var(--color-primary);
     color: var(--color-white);
+    font-weight: 600;
     padding: .6rem 1.4rem;
     border-radius: var(--radius-2);
     transition: var(--transition);
@@ -213,15 +215,15 @@ footer {
 
 .footer__categories a:hover {
     background: var(--color-white);
-    color: var(--color-gray-900);
+    color: var(--color-primary);
 }
 
 .footer_copyright {
     text-align: center;
-    border-top: 2px solid var(--color-gray-700);
+    border-top: 2px solid var(--color-primary);
     padding: 1rem;
     color: var(--color-white);
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /* ==== HOME ====================================================== */

@@ -104,7 +104,12 @@ const editUser = async (req, res, next) => {
 // GET request: api/users/
 // UNPROTECTED
 const getAuthors = async (req, res, next) => {
-    res.json("Get All Authors")
+    try {
+        const authors = await User.find().select('-password')
+        res.json(authors)
+    } catch (error) {
+        return next(new HttpError(error))
+    }
 }
 
 module.exports = { registerUser, loginUser, getUser, changeAvatar, editUser, getAuthors }

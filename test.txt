@@ -16,3 +16,6 @@ server
 > npm install jsonwebtoken
 > npm install express-fileupload
 > npm install uuid
+
+client
+> npm install axios

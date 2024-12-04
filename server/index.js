@@ -22,5 +22,5 @@ app.use(notFound)
 app.use(errorHandler)
 
 connect(process.env.MONGO_URI)
-    .then(app.listen(5000, () => console.log(`Server running on port ${process.env.PORT}`)))
+    .then(app.listen(process.env.PORT || 5000, () => console.log(`Server running on port ${process.env.PORT}`)))
     .catch(error => { console.log(error) })

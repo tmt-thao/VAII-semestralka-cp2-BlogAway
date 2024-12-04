@@ -27,7 +27,7 @@ const PostAuthor = ({authorID, createdAt}) => {
 
         <div className="post__author-details">
             <h5>By: {author?.name}</h5>
-            <small>{createdAt.split('T')[0]}</small>
+            <small>{createdAt}</small>
         </div>
     </Link>
   )

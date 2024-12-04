@@ -13,3 +13,4 @@ server
 > npm install -D nodemon
 > npm run dev
 > npm install bcryptjs
+> npm install jsonwebtoken

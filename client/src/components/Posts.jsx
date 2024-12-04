@@ -43,7 +43,8 @@ const Posts = () => {
                                     category,
                                     title,
                                     description,
-                                    authorID
+                                    authorID,
+                                    createdAt
                                 }) => <PostItem
                                         key={id}
                                         postID={id}
@@ -51,7 +52,8 @@ const Posts = () => {
                                         category={category}
                                         title={title}
                                         description={description}
-                                        authorID={authorID} />
+                                        authorID={authorID}
+                                        createdAt={createdAt} />
                             )
                         }
                     </div>
